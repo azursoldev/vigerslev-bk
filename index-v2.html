@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vigerslev Boldklub — Next-Gen Modern Club Portal (V2)</title>
+  <link rel="stylesheet" href="css/style-v2.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&family=Syne:wght@700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body class="theme-modern">
+
+  <!-- ═══════════════════════════════════════════════
+       DESIGN SWITCHER BAR (Sticky Top Announcement)
+  ═══════════════════════════════════════════════ -->
+  <aside class="design-switcher-bar">
+    <div class="switcher-inner">
+      <span class="switcher-badge">✨ NYT MODERNE DESIGN (V2)</span>
+      <span class="switcher-text">Skandinavisk Hvidt &amp; Smaragdgrønt Tema • Live kamp-nedtælling &amp; interaktivt matchcenter</span>
+      <div class="switcher-links">
+        <a href="index.html" class="switcher-btn btn-ghost">← Skift til Klassisk Reference Design (V1)</a>
+        <a href="index-v2.html" class="switcher-btn btn-active">Moderne Design (V2)</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ═══════════════════════════════════════════════
+       1. MODERN GLASS HEADER
+  ═══════════════════════════════════════════════ -->
+  <header class="modern-header" id="modernHeader">
+    <div class="header-inner">
+      
+      <!-- Brand Logo & Identity -->
+      <a href="index-v2.html" class="brand-logo-combo">
+        <div class="logo-glow-wrapper">
+          <img src="images/logo.webp" alt="Vigerslev Boldklub" class="modern-crest" />
+        </div>
+        <div class="brand-text">
+          <span class="brand-est">EST. 1956 • VALBY</span>
+          <span class="brand-title">VIGERSLEV BK</span>
+        </div>
+      </a>
+
+      <!-- Primary Navigation -->
+      <nav class="modern-nav">
+        <button class="nav-toggle-modern" id="menuToggle" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-items-modern" id="menuList">
+          <li class="active"><a href="#hero">Forside</a></li>
+          <li><a href="#matchcenter">Matchcenter</a></li>
+          <li><a href="#hold">Vores Hold</a></li>
+          <li><a href="#nyheder">Nyheder</a></li>
+          <li><a href="#medlem">Bliv Medlem</a></li>
+          <li><a href="#klubben">Klubben</a></li>
+          <li><a href="#sponsorer">Sponsorer</a></li>
+        </ul>
+      </nav>
+
+      <!-- Quick Actions Header -->
+      <div class="header-actions">
+        <a href="mailto:kontakt@vigerslevboldklub.dk" class="btn-contact-pill">
+          <span class="status-dot"></span> kontakt@vigerslevboldklub.dk
+        </a>
+        <a href="#medlem" class="btn-neon-cta">Bliv Medlem</a>
+      </div>
+
+    </div>
+  </header>
+
+
+  <!-- ═══════════════════════════════════════════════
+       2. NEXT-GEN HERO WITH LIVE MATCH COUNTDOWN
+  ═══════════════════════════════════════════════ -->
+  <section class="modern-hero" id="hero">
+    <div class="hero-bg-fx">
+      <div class="radial-glow glow-1"></div>
+      <div class="radial-glow glow-2"></div>
+      <div class="pitch-lines-overlay"></div>
+    </div>
+
+    <div class="hero-content-wrapper">
+      
+      <!-- Left Column: High-Impact Club Pitch -->
+      <div class="hero-left-col">
+        <div class="club-tag-pill">
+          <span class="pulse-emerald"></span> KØBENHAVNERSERIEN &bull; FODBOLD I VALBY SIDEN 1956
+        </div>
+        <h1 class="hero-big-headline">
+          MERE END BARE ET HOLD.<br />
+          <span class="text-gradient">FÆLLESSKAB &amp; FIGHT.</span>
+        </h1>
+        <p class="hero-desc">
+          Velkommen til Vigerslev Boldklub. Fra vores 1. hold i Københavnerserien til vores legendariske +60 veteraner — vi skaber fodboldglæde og sammenhold for alle generationer i Valby.
+        </p>
+
+        <!-- Social Community Buttons (Modern Pill Style) -->
+        <div class="hero-social-strip">
+          <a href="https://www.facebook.com" target="_blank" rel="noopener" class="hero-fb-card official">
+            <div class="fb-icon-circle">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </div>
+            <div class="fb-card-info">
+              <span class="fb-label">OFFICIEL FACEBOOK</span>
+              <span class="fb-title">Følg Vigerslev BK</span>
+            </div>
+            <span class="btn-arrow-chip">➔</span>
+          </a>
+
+          <a href="https://www.facebook.com" target="_blank" rel="noopener" class="hero-fb-card fangroup">
+            <div class="fb-icon-circle blue">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+            </div>
+            <div class="fb-card-info">
+              <span class="fb-label">FANGRUPPE &bull; DEBAT</span>
+              <span class="fb-title">VBK Fangruppe</span>
+            </div>
+            <span class="btn-arrow-chip">➔</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Column: Interactive Match Countdown Widget -->
+      <div class="hero-right-col">
+        <div class="live-match-widget">
+          
+          <div class="match-widget-header">
+            <span class="live-pill"><span class="blinking-dot"></span> NÆSTE KAMP</span>
+            <span class="league-meta">Københavnerserien (KS)</span>
+          </div>
+
+          <!-- Teams Faceoff -->
+          <div class="match-faceoff">
+            <div class="team-side">
+              <div class="team-badge-box">SBK</div>
+              <span class="team-name-label">Sundby BK 2</span>
+              <span class="home-away-tag">Hjemmebane</span>
+            </div>
+            
+            <div class="vs-divider">
+              <span class="vs-text">VS</span>
+              <span class="match-time-chip">Lør. 14/11 • 12:30</span>
+            </div>
+
+            <div class="team-side">
+              <div class="team-badge-box vbk-box">
+                <img src="images/logo.webp" alt="VBK" />
+              </div>
+              <span class="team-name-label">Vigerslev BK</span>
+              <span class="home-away-tag">Udebane</span>
+            </div>
+          </div>
+
+          <!-- Countdown Timer Display -->
+          <div class="countdown-display">
+            <div class="time-slot">
+              <span class="time-digit" id="cdDays">02</span>
+              <span class="time-name">DAGE</span>
+            </div>
+            <span class="cd-colon">:</span>
+            <div class="time-slot">
+              <span class="time-digit" id="cdHours">14</span>
+              <span class="time-name">TIMER</span>
+            </div>
+            <span class="cd-colon">:</span>
+            <div class="time-slot">
+              <span class="time-digit" id="cdMins">45</span>
+              <span class="time-name">MIN</span>
+            </div>
+            <span class="cd-colon">:</span>
+            <div class="time-slot">
+              <span class="time-digit" id="cdSecs">30</span>
+              <span class="time-name">SEK</span>
+            </div>
+          </div>
+
+          <!-- Match location & action -->
+          <div class="match-venue-row">
+            <span class="venue-icon">📍</span>
+            <span class="venue-name">Kløvermarkens Idrætsanlæg, Bane 4</span>
+          </div>
+
+          <div class="match-cta-actions">
+            <a href="#matchcenter" class="btn-widget-primary">Se Fuld Kampoversigt</a>
+            <a href="https://maps.google.com" target="_blank" rel="noopener" class="btn-widget-secondary">Rutevejledning</a>
+          </div>
+
+        </div><!-- /.live-match-widget -->
+      </div><!-- /.hero-right-col -->
+
+    </div><!-- /.hero-content-wrapper -->
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════
+       3. INTERACTIVE MATCHCENTER & TEAMS TABS
+  ═══════════════════════════════════════════════ -->
+  <section class="modern-matchcenter-section" id="matchcenter">
+    <div class="site-container">
+
+      <div class="section-top-bar">
+        <div>
+          <span class="eyebrow-emerald">OFFICIELT MATCHCENTER</span>
+          <h2 class="modern-section-title">KAMPE, RESULTATER &amp; STILLING</h2>
+        </div>
+        <p class="section-lead-muted">
+          Følg alle 5 hold i Vigerslev Boldklub. Vælg et hold nedenfor for at se seneste resultat, kommende kampe og stilling.
+        </p>
+      </div>
+
+      <!-- Modern Team Filter Tabs -->
+      <div class="team-tabs-bar" role="tablist">
+        <button class="team-tab-btn active" data-team="hold1" role="tab" aria-selected="true">
+          <span class="tab-rank">KS</span> 1. Hold
+        </button>
+        <button class="team-tab-btn" data-team="hold2" role="tab" aria-selected="false">
+          <span class="tab-rank">S2</span> 2. Hold
+        </button>
+        <button class="team-tab-btn" data-team="hold3" role="tab" aria-selected="false">
+          <span class="tab-rank">S4</span> 3. Hold
+        </button>
+        <button class="team-tab-btn" data-team="hold4" role="tab" aria-selected="false">
+          <span class="tab-rank">S5</span> 4. Hold
+        </button>
+        <button class="team-tab-btn" data-team="veteran" role="tab" aria-selected="false">
+          <span class="tab-rank">+60</span> Veteraner
+        </button>
+      </div>
+
+      <!-- Tab Panels Container -->
+      <div class="tab-content-wrapper">
+
+        <!-- ── TAB 1: 1. HOLD (KS) ── -->
+        <div class="team-tab-panel active" id="tab-hold1">
+          <div class="panel-grid-3col">
+
+            <!-- Card 1: Seneste Resultat -->
+            <div class="glass-info-card">
+              <div class="gic-header">
+                <span class="gic-badge status-win">SEJR (3-1)</span>
+                <span class="gic-date">12. Nov 2024</span>
+              </div>
+              <h4 class="gic-title">Seneste Kamp</h4>
+              <div class="score-summary-box">
+                <div class="score-team">
+                  <span class="st-name">B1908</span>
+                  <span class="st-score">1</span>
+                </div>
+                <div class="score-divider">–</div>
+                <div class="score-team highlight">
+                  <span class="st-name">Vigerslev BK</span>
+                  <span class="st-score">3</span>
+                </div>
+              </div>
+              <p class="gic-note">Målscorere: M. Hansen (24'), T. Lind (67'), K. Poulsen (88')</p>
+              <a href="#" class="gic-link">Se Kampreferat &amp; Statistik ›</a>
+            </div>
+
+            <!-- Card 2: Næste Kamp -->
+            <div class="glass-info-card highlighted-border">
+              <div class="gic-header">
+                <span class="gic-badge badge-upcoming">KOMMENDE</span>
+                <span class="gic-date">Lør. 14. Nov • 12:30</span>
+              </div>
+              <h4 class="gic-title">Næste Udfordring</h4>
+              <div class="next-fixture-box">
+                <div class="fixture-row">
+                  <strong>Sundby BK 2</strong>
+                  <span class="vs-tag">VS</span>
+                  <strong class="highlight-vbk">Vigerslev BK</strong>
+                </div>
+                <span class="venue-tag">📍 Kløvermarkens Idrætsanlæg</span>
+              </div>
+              <p class="gic-note">Vigtig duel i toppen af Københavnerserien. Gratis adgang for alle tilskuere!</p>
+              <a href="#" class="gic-link">Fuld Kampprogram ›</a>
+            </div>
+
+            <!-- Card 3: Nuværende Stilling -->
+            <div class="glass-info-card">
+              <div class="gic-header">
+                <span class="gic-badge badge-table">LIGATABEL</span>
+                <span class="gic-date">Københavnerserien</span>
+              </div>
+              <h4 class="gic-title">Aktuel Stilling</h4>
+              <div class="mini-table">
+                <div class="t-row t-head">
+                  <span>Nr. Hold</span>
+                  <span>K</span>
+                  <span>Pts</span>
+                </div>
+                <div class="t-row">
+                  <span>5. Husum BK</span>
+                  <span>12</span>
+                  <span>20</span>
+                </div>
+                <div class="t-row">
+                  <span>6. FB 2</span>
+                  <span>12</span>
+                  <span>18</span>
+                </div>
+                <div class="t-row t-vbk">
+                  <span><strong>7. Vigerslev BK</strong></span>
+                  <span><strong>12</strong></span>
+                  <span><strong>17</strong></span>
+                </div>
+                <div class="t-row">
+                  <span>8. Union 2</span>
+                  <span>12</span>
+                  <span>14</span>
+                </div>
+              </div>
+              <a href="#" class="gic-link">Se Komplet Ligatabel ›</a>
+            </div>
+
+          </div><!-- /.panel-grid-3col -->
+        </div><!-- /#tab-hold1 -->
+
+        <!-- ── TAB 2: 2. HOLD (Serie 2) ── -->
+        <div class="team-tab-panel" id="tab-hold2">
+          <div class="panel-grid-3col">
+            <div class="glass-info-card">
+              <div class="gic-header">
+                <span class="gic-badge status-draw">UAFGJORT (2-2)</span>
+                <span class="gic-date">10. Nov 2024</span>
+              </div>
+              <h4 class="gic-title">Seneste Kamp</h4>
+              <div class="score-summary-box">
+                <div class="score-team highlight"><span class="st-name">VBK 2</span><span class="st-score">2</span></div>
+                <div class="score-divider">–</div>
+                <div class="score-team"><span class="st-name">Union 2</span><span class="st-score">2</span></div>
+              </div>
+              <p class="gic-note">Stærk comebacks-indsats i 2. halvleg sikrede 1 point.</p>
+              <a href="#" class="gic-link">Se Kampreferat ›</a>
+            </div>
+            <div class="glass-info-card highlighted-border">
+              <div class="gic-header"><span class="gic-badge badge-upcoming">KOMMENDE</span><span class="gic-date">Søn. 15. Nov • 13:00</span></div>
+              <h4 class="gic-title">Næste Kamp</h4>
+              <div class="next-fixture-box">
+                <div class="fixture-row"><strong>FA 2000 3</strong> <span class="vs-tag">VS</span> <strong class="highlight-vbk">VBK 2</strong></div>
+                <span class="venue-tag">📍 Jens Jessens Vej, Frb</span>
+              </div>
+              <p class="gic-note">Lokalopgør med masser af intensitet på banen.</p>
+              <a href="#" class="gic-link">Fuld Kampprogram ›</a>
+            </div>
+            <div class="glass-info-card">
+              <div class="gic-header"><span class="gic-badge badge-table">SERIE 2</span><span class="gic-date">Pulje 3</span></div>
+              <h4 class="gic-title">Stilling i Serie 2</h4>
+              <div class="mini-table">
+                <div class="t-row t-head"><span>Hold</span><span>K</span><span>Pts</span></div>
+                <div class="t-row t-vbk"><span><strong>7. Vigerslev BK 2</strong></span><span><strong>12</strong></span><span><strong>15</strong></span></div>
+              </div>
+              <p class="gic-note">Målscore: 24 - 22 (+2)</p>
+              <a href="#" class="gic-link">Se Komplet Ligatabel ›</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── TAB 3: 3. HOLD (Serie 4) ── -->
+        <div class="team-tab-panel" id="tab-hold3">
+          <div class="panel-grid-3col">
+            <div class="glass-info-card">
+              <div class="gic-header"><span class="gic-badge status-win">SEJR (4-1)</span><span class="gic-date">9. Nov 2024</span></div>
+              <h4 class="gic-title">Seneste Kamp</h4>
+              <div class="score-summary-box">
+                <div class="score-team highlight"><span class="st-name">VBK 3</span><span class="st-score">4</span></div>
+                <div class="score-divider">–</div>
+                <div class="score-team"><span class="st-name">Bk. Frem 3</span><span class="st-score">1</span></div>
+              </div>
+              <p class="gic-note">Målfest i Valby med strålende angrebsfodbold.</p>
+              <a href="#" class="gic-link">Se Kampreferat ›</a>
+            </div>
+            <div class="glass-info-card highlighted-border">
+              <div class="gic-header"><span class="gic-badge badge-upcoming">KOMMENDE</span><span class="gic-date">Søn. 15. Nov • 11:00</span></div>
+              <h4 class="gic-title">Næste Kamp</h4>
+              <div class="next-fixture-box">
+                <div class="fixture-row"><strong>Husum BK 4</strong> <span class="vs-tag">VS</span> <strong class="highlight-vbk">VBK 3</strong></div>
+                <span class="venue-tag">📍 Husum Parken</span>
+              </div>
+              <p class="gic-note">Mulighed for at avancere til top 3 ved sejr.</p>
+              <a href="#" class="gic-link">Fuld Kampprogram ›</a>
+            </div>
+            <div class="glass-info-card">
+              <div class="gic-header"><span class="gic-badge badge-table">SERIE 4</span><span class="gic-date">Stilling</span></div>
+              <h4 class="gic-title">Top 4 Placering</h4>
+              <div class="mini-table">
+                <div class="t-row t-head"><span>Hold</span><span>K</span><span>Pts</span></div>
+                <div class="t-row t-vbk"><span><strong>4. Vigerslev BK 3</strong></span><span><strong>12</strong></span><span><strong>19</strong></span></div>
+              </div>
+              <p class="gic-note">Stærk efterårssæson med 6 sejre.</p>
+              <a href="#" class="gic-link">Se Komplet Ligatabel ›</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── TAB 4: 4. HOLD (Serie 5) ── -->
+        <div class="team-tab-panel" id="tab-hold4">
+          <div class="panel-grid-3col">
+            <div class="glass-info-card">
+              <div class="gic-header"><span class="gic-badge status-win">SEJR (3-0)</span><span class="gic-date">8. Nov 2024</span></div>
+              <h4 class="gic-title">Seneste Kamp</h4>
+              <div class="score-summary-box">
+                <div class="score-team highlight"><span class="st-name">VBK 4</span><span class="st-score">3</span></div>
+                <div class="score-divider">–</div>
+                <div class="score-team"><span class="st-name">Amager FF 5</span><span class="st-score">0</span></div>
+              </div>
+              <p class="gic-note">Clean sheet og fuldstændig kontrol i 90 minutter.</p>
+              <a href="#" class="gic-link">Se Kampreferat ›</a>
+            </div>
+            <div class="glass-info-card highlighted-border">
+              <div class="gic-header"><span class="gic-badge badge-upcoming">KOMMENDE</span><span class="gic-date">Søn. 15. Nov • 10:00</span></div>
+              <h4 class="gic-title">Næste Kamp</h4>
+              <div class="next-fixture-box">
+                <div class="fixture-row"><strong>Dragør BK 3</strong> <span class="vs-tag">VS</span> <strong class="highlight-vbk">VBK 4</strong></div>
+                <span class="venue-tag">📍 Dragør Boldklub</span>
+              </div>
+              <a href="#" class="gic-link">Fuld Kampprogram ›</a>
+            </div>
+            <div class="glass-info-card">
+              <div class="gic-header"><span class="gic-badge badge-table">SERIE 5</span><span class="gic-date">Podieplads</span></div>
+              <h4 class="gic-title">Nr. 3 i Serie 5</h4>
+              <div class="mini-table">
+                <div class="t-row t-head"><span>Hold</span><span>K</span><span>Pts</span></div>
+                <div class="t-row t-vbk"><span><strong>3. Vigerslev BK 4</strong></span><span><strong>12</strong></span><span><strong>21</strong></span></div>
+              </div>
+              <a href="#" class="gic-link">Se Komplet Ligatabel ›</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── TAB 5: VETERANER (+60) ── -->
+        <div class="team-tab-panel" id="tab-veteran">
+          <div class="panel-grid-3col">
+            <div class="glass-info-card">
+              <div class="gic-header"><span class="gic-badge status-win">SEJR (2-1)</span><span class="gic-date">5. Nov 2024</span></div>
+              <h4 class="gic-title">Seneste Kamp</h4>
+              <div class="score-summary-box">
+                <div class="score-team highlight"><span class="st-name">VBK +60</span><span class="st-score">2</span></div>
+                <div class="score-divider">–</div>
+                <div class="score-team"><span class="st-name">FB +60</span><span class="st-score">1</span></div>
+              </div>
+              <p class="gic-note">Kæmpe rutine og flot fight af vores veteraner.</p>
+              <a href="#" class="gic-link">Se Kampreferat ›</a>
+            </div>
+            <div class="glass-info-card highlighted-border">
+              <div class="gic-header"><span class="gic-badge badge-upcoming">KOMMENDE</span><span class="gic-date">Tirs. 17. Nov • 18:30</span></div>
+              <h4 class="gic-title">Næste Kamp</h4>
+              <div class="next-fixture-box">
+                <div class="fixture-row"><strong>Vanløse +60</strong> <span class="vs-tag">VS</span> <strong class="highlight-vbk">VBK +60</strong></div>
+                <span class="venue-tag">📍 Vanløse Idrætspark</span>
+              </div>
+              <a href="#" class="gic-link">Fuld Kampprogram ›</a>
+            </div>
+            <div class="glass-info-card">
+              <div class="gic-header"><span class="gic-badge badge-table">+60 RÆKKEN</span><span class="gic-date">2. Plads</span></div>
+              <h4 class="gic-title">Sølvplads i Rækken</h4>
+              <div class="mini-table">
+                <div class="t-row t-head"><span>Hold</span><span>K</span><span>Pts</span></div>
+                <div class="t-row t-vbk"><span><strong>2. Vigerslev BK +60</strong></span><span><strong>8</strong></span><span><strong>16</strong></span></div>
+              </div>
+              <a href="#" class="gic-link">Se Komplet Ligatabel ›</a>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /.tab-content-wrapper -->
+
+    </div><!-- /.site-container -->
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════
+       4. MODERN BENTO NEWS GRID
+  ═══════════════════════════════════════════════ -->
+  <section class="modern-news-section" id="nyheder">
+    <div class="site-container">
+
+      <div class="section-top-bar">
+        <div>
+          <span class="eyebrow-emerald">KLUBJOURNAL</span>
+          <h2 class="modern-section-title">NYHEDER &amp; HISTORIER</h2>
+        </div>
+        <a href="#" class="btn-outline-glow">Arkiv &amp; Artikler ›</a>
+      </div>
+
+      <div class="bento-news-grid">
+
+        <!-- Featured Large Story -->
+        <article class="bento-card bento-hero-story">
+          <div class="bento-img-wrap">
+            <img src="https://images.unsplash.com/photo-1508098682722-e99c643e7f0b?w=800&q=85&fit=crop" alt="1. hold sejrsjubel" class="bento-cover" />
+            <div class="bento-badge-top">FREMHÆVET ARTIKEL</div>
+          </div>
+          <div class="bento-story-body">
+            <div class="meta-inline">
+              <span class="meta-tag emerald">1. HOLD (KS)</span>
+              <span class="meta-time">12. November 2024 &bull; 4 min læsetid</span>
+            </div>
+            <h3 class="bento-title-lg">
+              <a href="#">Taktisk triumf på udebane: 3–1 sejr over rivalerne fra B1908</a>
+            </h3>
+            <p class="bento-desc">
+              Efter en forrygende 2. halvleg med højt pres og kliniske afslutninger sikrede 1. holdet tre vitale point. Læs cheftrænerens analyse af nøgleøjeblikkene.
+            </p>
+            <a href="#" class="btn-read-story">Læs Hele Kamprapporten ➔</a>
+          </div>
+        </article>
+
+        <!-- Side Story 1 -->
+        <article class="bento-card bento-small-story">
+          <div class="bento-img-wrap-sm">
+            <img src="https://images.unsplash.com/photo-1529900748604-07564a03e7a6?w=500&q=80&fit=crop" alt="Klubhus modernisering" class="bento-cover" />
+            <span class="bento-badge-sm">ANLÆG</span>
+          </div>
+          <div class="bento-story-body-sm">
+            <span class="meta-tag gold">KLUBHUS</span>
+            <h4 class="bento-title-sm"><a href="#">Første spadestik til nyt cafeteria og omklædningsrum</a></h4>
+            <span class="meta-time">8. November 2024</span>
+          </div>
+        </article>
+
+        <!-- Side Story 2 -->
+        <article class="bento-card bento-small-story">
+          <div class="bento-img-wrap-sm">
+            <img src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=500&q=80&fit=crop" alt="Veteranfodbold" class="bento-cover" />
+            <span class="bento-badge-sm">FÆLLESSKAB</span>
+          </div>
+          <div class="bento-story-body-sm">
+            <span class="meta-tag blue">VETERAN</span>
+            <h4 class="bento-title-sm"><a href="#">+60 Holdet fortsætter sejrsrækken: Ubesejret i 5 kampe</a></h4>
+            <span class="meta-time">3. November 2024</span>
+          </div>
+        </article>
+
+      </div><!-- /.bento-news-grid -->
+
+    </div><!-- /.site-container -->
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════
+       5. MEMBERSHIP EXPERIENCE (Dark Emerald Banner)
+  ═══════════════════════════════════════════════ -->
+  <section class="modern-cta-section" id="medlem">
+    <div class="site-container">
+      <div class="cta-glass-card">
+        
+        <div class="cta-text-side">
+          <span class="pill-glow">BLIV EN DEL AF VIGERSLEV BK</span>
+          <h2 class="cta-hero-heading">
+            KLAR TIL AT TRÆKKE DEN <span class="text-emerald">GRØNNE TRØJE</span> OVER HOVEDET?
+          </h2>
+          <p class="cta-hero-sub">
+            Uanset om du søger konkurrencepræget divisionsfodbold eller social motionsfodbold med gode kammerater, er døren altid åben i Valbys mest traditionsrige klub.
+          </p>
+
+          <div class="cta-check-list">
+            <div class="check-item"><span class="chk">✓</span> Prøvetræning er altid gratis og uforpligtende</div>
+            <div class="check-item"><span class="chk">✓</span> Faste træningstider på kunstgræs og græsbaner</div>
+            <div class="check-item"><span class="chk">✓</span> Aktivt socialt klubliv med fællesspisning og arrangementer</div>
+          </div>
+
+          <div class="cta-action-group">
+            <a href="mailto:kontakt@vigerslevboldklub.dk" class="btn-emerald-large">Tilmeld Prøvetræning</a>
+            <a href="#klubben" class="btn-ghost-large">Find Klubhuset &amp; Baner</a>
+          </div>
+        </div>
+
+        <div class="cta-stat-side">
+          <div class="stat-glass-badge">
+            <span class="stat-val">1956</span>
+            <span class="stat-tit">ÅR GRUNDLAGT</span>
+          </div>
+          <div class="stat-glass-badge">
+            <span class="stat-val">5+</span>
+            <span class="stat-tit">AKTIVE HOLD</span>
+          </div>
+          <div class="stat-glass-badge">
+            <span class="stat-val">350+</span>
+            <span class="stat-tit">MEDLEMMER</span>
+          </div>
+          <div class="stat-glass-badge">
+            <span class="stat-val">100%</span>
+            <span class="stat-tit">FÆLLESSKAB</span>
+          </div>
+        </div>
+
+      </div><!-- /.cta-glass-card -->
+    </div><!-- /.site-container -->
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════
+       6. CLUBHOUSE & VENUE (Valby Map & Info)
+  ═══════════════════════════════════════════════ -->
+  <section class="modern-venue-section" id="klubben">
+    <div class="site-container">
+      <div class="venue-flex-card">
+        
+        <div class="venue-info-pane">
+          <span class="eyebrow-emerald">KLUBHUS &amp; FACILITETER</span>
+          <h3 class="venue-heading">VIGERSLEV ALLÉ 80, 2500 VALBY</h3>
+          <p class="venue-desc">
+            Vores historiske anlæg er klubbens hjerte. Her mødes spillere og trænere før og efter træning og kampe til hyggeligt samvær, taktisk gennemgang og kolde forfriskninger i cafeteriet.
+          </p>
+          
+          <div class="venue-contact-rows">
+            <div class="v-row">
+              <span class="v-icon">📍</span>
+              <div>
+                <strong>Adresse</strong>
+                <p>Vigerslev Allé 80, 2500 Valby</p>
+              </div>
+            </div>
+            <div class="v-row">
+              <span class="v-icon">🚆</span>
+              <div>
+                <strong>Transport</strong>
+                <p>5 min gang fra København Syd St. / Vigerslev Allé St.</p>
+              </div>
+            </div>
+            <div class="v-row">
+              <span class="v-icon">✉</span>
+              <div>
+                <strong>E-mail</strong>
+                <p><a href="mailto:kontakt@vigerslevboldklub.dk">kontakt@vigerslevboldklub.dk</a></p>
+              </div>
+            </div>
+          </div>
+          
+          <a href="https://maps.google.com" target="_blank" rel="noopener" class="btn-emerald-route">Åbn i Google Maps ➔</a>
+        </div>
+
+        <div class="venue-image-pane">
+          <img src="images/pitch_bg.png" alt="Baneanlæg" class="venue-backdrop" />
+          <div class="venue-card-floater">
+            <div class="vcf-crest">
+              <img src="images/logo.webp" alt="Vigerslev Logo" />
+            </div>
+            <div class="vcf-text">
+              <strong>HJEMMEBANE FOR VBK</strong>
+              <span>Velkommen til grønne sejre i Valby</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════
+       7. ULTRA-CLEAN SPONSOR WALL
+  ═══════════════════════════════════════════════ -->
+  <section class="modern-sponsor-wall" id="sponsorer">
+    <div class="site-container">
+      
+      <div class="sponsor-wall-header">
+        <span class="eyebrow-emerald">STOLTE SAMARBEJDSPARTNERE</span>
+        <h3 class="sponsor-wall-title">VORES SPONSORER STØTTER FÆLLESSKABET</h3>
+      </div>
+
+      <div class="modern-sponsor-grid">
+        <div class="msp-card"><img src="images/sp_rema_2x.png" alt="REMA 1000 Valby" /></div>
+        <div class="msp-card"><img src="images/sp_carlsberg_2x.png" alt="Carlsberg" /></div>
+        <div class="msp-card"><img src="images/sp_sportsworld_2x.png" alt="Sports World" /></div>
+        <div class="msp-card"><img src="images/sp_puma_2x.png" alt="PUMA" /></div>
+        <div class="msp-card"><img src="images/sp_unisport_2x.png" alt="unisport" /></div>
+        <div class="msp-card"><img src="images/sp_clever_2x.png" alt="Clever" /></div>
+        <div class="msp-card"><img src="images/sp_sydbank_2x.png" alt="Sydbank" /></div>
+        <div class="msp-card"><img src="images/sp_danske_2x.png" alt="Danske Fragtmænd" /></div>
+        <div class="msp-card"><img src="images/sp_lokalbolig_2x.png" alt="LokalBolig" /></div>
+      </div>
+
+      <div class="sponsor-cta-text">
+        <span>Vil din virksomhed støtte lokalsporten og fællesskabet i Valby?</span>
+        <a href="mailto:kontakt@vigerslevboldklub.dk">Bliv sponsor for Vigerslev BK ›</a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════
+       8. MODERN FOOTER
+  ═══════════════════════════════════════════════ -->
+  <footer class="modern-footer">
+    <div class="site-container">
+      
+      <div class="footer-primary-grid">
+        
+        <!-- Brand Summary -->
+        <div class="f-col-brand">
+          <div class="f-logo-line">
+            <img src="images/logo.webp" alt="Vigerslev Logo" class="f-crest" />
+            <span class="f-club-title">VIGERSLEV BOLDKLUB</span>
+          </div>
+          <p class="f-tagline">FODBOLD I VALBY SIDEN 1956</p>
+          <p class="f-summary">
+            Grundlagt med passion for spillet og troen på, at fællesskabet uden for banen er lige så vigtigt som sejrene på den.
+          </p>
+          <div class="f-social-cluster">
+            <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Links: Hold -->
+        <div class="f-col">
+          <h4 class="f-head">Vores Hold</h4>
+          <ul class="f-links">
+            <li><a href="#matchcenter">1. Hold — KS</a></li>
+            <li><a href="#matchcenter">2. Hold — Serie 2</a></li>
+            <li><a href="#matchcenter">3. Hold — Serie 4</a></li>
+            <li><a href="#matchcenter">4. Hold — Serie 5</a></li>
+            <li><a href="#matchcenter">Veteraner — +60</a></li>
+          </ul>
+        </div>
+
+        <!-- Links: Klubben -->
+        <div class="f-col">
+          <h4 class="f-head">Hurtig Navigation</h4>
+          <ul class="f-links">
+            <li><a href="#hero">Forside</a></li>
+            <li><a href="#matchcenter">Kampprogram</a></li>
+            <li><a href="#nyheder">Klubnyheder</a></li>
+            <li><a href="#medlem">Bliv Medlem</a></li>
+            <li><a href="#klubben">Klubhus &amp; Baner</a></li>
+            <li><a href="#sponsorer">Sponsorer</a></li>
+            <li><a href="index.html">Klassisk Version (V1)</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Box -->
+        <div class="f-col">
+          <h4 class="f-head">Kontakt</h4>
+          <div class="f-address-box">
+            <p>📍 Vigerslev Allé 80<br />2500 Valby, Danmark</p>
+            <p>✉ <a href="mailto:kontakt@vigerslevboldklub.dk">kontakt@vigerslevboldklub.dk</a></p>
+          </div>
+          <a href="#medlem" class="btn-f-join">Tilmeld som Medlem</a>
+        </div>
+
+      </div><!-- /.footer-primary-grid -->
+
+      <div class="footer-legal-line">
+        <span>&copy; <span id="v2Year"></span> Vigerslev Boldklub. Alle rettigheder forbeholdes.</span>
+        <span>Udviklet som responsiv frontend prototype (V2)</span>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="js/script-v2.js"></script>
+</body>
+</html>
+
